@@ -13,8 +13,11 @@ function App() {
     <div className="App">
       <AllButton/>
       <Card title="Card Title" content="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-      <button className={`${style.secondary}`} onClick={()=>{setIsModal(true)}}> Open Modal </button>
+      <div className={`${style.container}`}>
+      <button className={`${style.secondary} ${style.container}`} onClick={()=>{setIsModal(true)}}> Open Modal </button>
       {isModal===true?<Modal isModal={isModal} setIsModal={setIsModal}/>:''}
+      </div>
+      
     </div>
   );
 }
