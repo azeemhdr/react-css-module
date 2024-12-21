@@ -5,6 +5,7 @@ import Card from './components/Card';
 import Modal from './components/Modal';
 import style from '../src/components/Button.module.css'
 import { useState } from 'react';
+import Gallery from './components/Gallery';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <button className={`${style.secondary} ${style.container}`} onClick={()=>{setIsModal(true)}}> Open Modal </button>
       {isModal===true?<Modal isModal={isModal} setIsModal={setIsModal}/>:''}
       </div>
+      <Gallery />
       
     </div>
   );
