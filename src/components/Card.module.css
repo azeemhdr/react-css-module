@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.card{
+	width: 400px;
+	box-shadow: 0 0 20px black;
+	margin-top: 20px;
+	border-radius: 4px;
+}
+
+.cardImg{
+width: 100%;
+object-fit: cover;
+border-radius: 4px 4px 0px 0px;
+}
+
+.cardContentWrapper{
+width: 100%;
+padding: 20px;
+}
+
+.cardtitle{
+	font-size: 36px;
+}
+
+.cardContent{
+font-size: 20px;
+}
