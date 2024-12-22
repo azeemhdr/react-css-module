@@ -15,3 +15,18 @@
 	width: 100%;
 	object-fit: cover;
 }
+
+.galleryModal{
+	position: fixed;
+	inset: 0 0 0 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.galleryModalContent{
+	width: 100%;
+	object-fit: cover;
+	padding: 10px;
+}

@@ -11,7 +11,8 @@ import PopUp from './components/PopUp';
 
 function App() {
   const [isModal,setIsModal]=useState(false);
-  const [isPopUp,setIsPopUp]=useState(false)
+  const [isPopUp,setIsPopUp]=useState(false);
+  
   return (
     <div className="App">
       <AllButton/>
@@ -20,7 +21,7 @@ function App() {
       <button className={`${style.secondary} ${style.container}`} onClick={()=>{setIsModal(true)}}> Open Modal </button>
       {isModal===true?<Modal isModal={isModal} setIsModal={setIsModal}/>:''}
       </div>
-      <Gallery />
+      <Gallery/>
       <div className={style.container}>
       <button className={`${style.success}`} onClick={()=>{setIsPopUp(true)}}>Open Alert</button>
       {isPopUp===true?
