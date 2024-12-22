@@ -7,8 +7,8 @@ export default function GalleryModal({setGalleryModal}) {
   return (
 	<div>
 		<div className={`${styles.galleryModal}`} onClick={()=>{setGalleryModal(false)}}>
-			<div className={`${styles.galleryModalContent}`}>
-				<img src={images} />
+			<div className={`${styles.galleryModalContentWrapper}`}>
+				<img src={images} className={styles.galleryModalContent} onClick={(e)=>{e.stopPropagation()}} />
 			</div>
 		</div>
 	</div>
